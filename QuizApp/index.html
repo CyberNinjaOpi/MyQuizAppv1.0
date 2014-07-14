@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body onload="drawszlider(121, 56);">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/font-awesome.css" rel="stylesheet" />
+    <link href="Content/progressBar.css" rel="stylesheet" />
+    <!------Background Coloring----------->
+    <input type="color" id="backGround" /> >
+
+    <button onclick="myFunction()">BGColor</button>
+    <!---------------------------->
+    
+
+    <!---------------------------->
+    <center>
+    <h1>Quiz App</h1>
+        <div id="content">
+            <h3 id="question"></h3>
+            <div id="choices"></div>
+            <p><button id="submit"></button></p>
+            <p id="score"></p>
+        </div>
+    </center>
+    <script>
+        function myFunction() {
+            var result = document.getElementById("backGround").value;
+            document.getElementsByTagName("body")[0].style.backgroundColor = result;
+
+        }
+    </script>
+
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="myJavascript.js"></script>
+</body>
+</html>
